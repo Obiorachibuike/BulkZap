@@ -25,14 +25,5 @@ class MailExpress {
     }
   }
 }
-let AccountSID = "AC80e884ef4b1c7bad0c6826069939e87f";
-let Authtoken = "78597ad2bb8420cd2c45ca116827431c";
-let sender = "+15642346449";
 
-const client = new MailExpress(AccountSID, Authtoken, sender);
-
-let message = "Happy New Day";
-let receivers = ["+2348066715587", "+1987654321"];
-const reply = client.sendBulkMessages(message, receivers);
-console.log(reply);
 module.exports = MailExpress;
